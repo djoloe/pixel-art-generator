@@ -13,9 +13,9 @@ let heightValue = document.getElementById("height-value");
 let colorPicker = document.querySelector("#color-input");
 let mainContainer = document.querySelector(".main-container");
 const saveButton = document.getElementById('save-grid');
-const loadButton = document.getElementById('load-button');
+const logOutButton = document.getElementById('load-button');
 
-loadButton.addEventListener("click", (event) => {
+window.addEventListener("load", (event) => {
     event.preventDefault();
 
     const cookieID = getCookieID(document.cookie);
@@ -67,6 +67,10 @@ gridButton.addEventListener('click', () => {
             container.appendChild(divRow);
         }
     }
+})
+
+logOutButton.addEventListener('click', () => {
+    window.location.href = 'http://127.0.0.1:5500/public/login.html';
 })
 
 saveButton.addEventListener('click', (e) =>{
