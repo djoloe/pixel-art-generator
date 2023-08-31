@@ -70,17 +70,21 @@ gridButton.addEventListener('click', () => {
 })
 
 logOutButton.addEventListener('click', () => {
-    window.location.href = 'http://127.0.0.1:5500/public/login.html';
+    window.location.href = 'http://127.0.0.1:5500/public/login/login.html';
 })
 
 saveButton.addEventListener('click', (e) =>{
     e.preventDefault();
+    const cookieID = getCookieID(document.cookie);
     const json = serializateContainer();
-
+    const data = {
+        jsonPost : json,
+        valueCookie : cookieID
+    }
     axios({
         method: 'POST',
         url: 'http://127.0.0.1:3000/input-container',
-        data: json,
+        data: data,
         headers: {
             "Content-type": "application/json; charset=UTF-8"            
         }

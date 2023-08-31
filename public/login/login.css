@@ -112,7 +112,7 @@ body{
     height: 2.5rem;
     background-color: #ebba34;
     color: white;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 0.5rem 1rem;
 }
 
 .button:hover {
@@ -140,7 +140,7 @@ body{
 
 .a-content{
     display: block;
-    margin-top: 4rem;
+    margin-top: 1rem;
     text-decoration: none;
     color: black;
 }

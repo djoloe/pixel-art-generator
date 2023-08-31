@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
-        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="./login.css">
         <link rel="shortcut icon" href="#">
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </head>
@@ -13,21 +13,19 @@
             <div class="wrap">
                 <div class="main-content">
                     <div class="img-content">
-                        <img src="svg/css-programming-coding-svgrepo-com.svg" alt="">
+                        <img src="/public/svg/css-programming-coding-svgrepo-com.svg" alt="">
                     </div>
                     <div class="user-info-content">
                         <p class="member-login">Member Login</p>
                         <div class="input-flex-box">
-                            <img src="svg/email.svg" alt="" class="svg-input" >
+                            <img src="/public/svg/email.svg" alt="" class="svg-input" >
                             <input type="email" id="id-email" name="email" class="input-content" placeholder="Email" required>
                         </div>
                         <div class="input-flex-box">
-                            <img src="svg/lock-password.svg" alt="" class="svg-input" id="reveal-password"  />
+                            <img src="/public/svg/lock-password.svg" alt="" class="svg-input" id="reveal-password"  />
                             <input type="password" id="id-password" name="password" class="input-content" placeholder="Pasword" required><br>
                         </div>
                         <button type="submit" class="button" id="login-button"><span id="change-button-text">Login</span></button><br>
-                        <p class="forgot">Forgot</p>
-                        <a href="#" class="a-content-up">Username / Password?</a><br>
                         <a href="#" class="a-content" id="create-account">Create your Account</a>
                     </div>
                 </div>
@@ -37,31 +35,31 @@
             <div class="wrap">
                 <div class="main-content">
                     <div class="img-content">
-                        <img src="svg/css-programming-coding-svgrepo-com.svg" alt="">
+                        <img src="/public/svg/css-programming-coding-svgrepo-com.svg" alt="">
                     </div>
                     <div class="user-info-content">
                         <p class="member-login">Member Register</p>
                         <div class="name-box input-flex-box" id="show/hide-name"  >
-                            <img src="svg/user-picture.svg" alt="" class="svg-input">
+                            <img src="/public/svg/user-picture.svg" alt="" class="svg-input">
                             <input type="text" class="input-content" name = "username" id="name-id"  placeholder="Name" required>
                         </div>
                         <div class="input-flex-box">
-                            <img src="svg/email.svg" alt="" class="svg-input" >
+                            <img src="/public/svg/email.svg" alt="" class="svg-input" >
                             <input type="email" id="id-email" name="email" class="input-content" placeholder="Email" required>
                         </div>
                         <div class="input-flex-box">
-                            <img src="svg/lock-password.svg" alt="" class="svg-input" id="reveal-password"  />
+                            <img src="/public/svg/lock-password.svg" alt="" class="svg-input" id="reveal-password"  />
                             <input type="password" id="id-password" name="password" class="input-content" placeholder="Pasword" required><br>
                         </div>
                         <button type="submit" class="button" id="register-button">Register</button><br>
                         <p class="forgot">Forgot</p>
-                        <a href="#" class="a-content-up">Username / Password?</a><br>
+                        <a href="#" class="a-content-up" id="forgot-username-password-id">Username / Password?</a><br>
                         <a href="#" class="a-content" id="back-to-register">Wanna Login?</a>
                     </div>
                 </div>
             </div>
         </form>
-        <script src="login.js"></script>    
+        <script src="./login.js"></script>    
     </body>
 </html>
 

@@ -13,6 +13,7 @@ let registerForm = document.getElementById('register-form');
 const mainDiv = document.getElementsByClassName('#main-content');
 const loginForm = document.getElementById('login-form');
 const backToRegisterLink = document.getElementById('back-to-register');
+const forgotPassword = document.getElementById('forgot-username-password-id');
 
 
 let click = 0;
@@ -71,12 +72,17 @@ loginForm.addEventListener('submit', (e) => {
     })
     .then((response) => {
       if(response.status === 200){
-        window.location.href = 'http://127.0.0.1:5500/public/main.html';
+        window.location.href = 'http://127.0.0.1:5500/public/main/main.html';
       }
     })
     .catch( (response) => {
       console.log( response);
     })
+})
+
+forgotPassword.addEventListener('click', () =>{
+  window.location.href = 'http://127.0.0.1:5500/public/forgot-layer/forgot.html';
+
 })
 
 

@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul[role = 'list'],
+ol[role='list']{
+    list-style: none;
+}
+
+html:focus-within{
+    scroll-behavior: smooth;
+}
+
+body,
+html{
+    box-sizing: border-box;
+}
+
+body{
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+body{
+    background-color: #6a53c7;
+}
+
+.wrap-content{
+    background: #f5f6edda;
+    margin: 0 auto;
+    height: 30vh;
+    max-width: 70vh;
+    margin-top: 35vh;
+    border-radius: 1rem;
+}
+
+.content{
+     padding: 3rem;
+     text-align: center;
+     
+}
+
+.button-forgot{
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 10rem;
+    border: 1px solid none;
+    border-radius: 1rem;
+    
+}
+
+.button-forgot:hover{
+    cursor: grab;
+    box-shadow: 0 5px #666;
+}
+
+.input-email-box{
+    height: 1.5rem;
+    width: 70%;
+    margin-top: 0.5rem;
+    text-align: center;
+    outline: none;
+}
+
+.input-email-box:focus{
+    border: 2px solid black;
+}
+
+.back-to-login{
+    color: black;
+    text-decoration: none;
+}
+
+.back-to-login:hover,
+.back-to-login:hover {
+    text-decoration:underline;  
+}
